@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_geng"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/comment_ed_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:hint="发表评论"
+        android:padding="8dp"
+        android:textCursorDrawable="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/comment_relevance1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="#fff"
+            android:src="@mipmap/compose_toolbar_mention_normal" />
+        <ImageButton
+            android:id="@+id/comment_expression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/comment_relevance1"
+            android:layout_marginLeft="20dp"
+            android:background="#fff"
+            android:src="@mipmap/btn_emoji_normal" />
+
+        <CheckBox
+            android:id="@+id/comment_retransmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/comment_expression"
+            android:text="转发到动弹"
+            android:textColor="#847e7e" />
+
+        <Button
+            android:clickable="false"
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="发送"
+            android:textColor="#999494" />
+    </RelativeLayout>
+
+</LinearLayout>
